@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Bites</title>
+    <style>
+        *{
+            background-color: blanchedalmond;
+        }
+        footer{
+            color:darkblue
+        }
+        #order-form{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        #header-img{
+            width: 50px;
+            height: 30px;
+        }
+        header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+            }
+        nav ol li{
+            list-style: none;
+            display: inline-block;
+        }
+        h1{
+            color:darkblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            text-shadow: 1px 1px 1px darkblue;
+            display: flex;
+        }
+        textarea{
+            width:300px;
+            height:100px;
+            border-style: dotted;
+            border-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="header-img" src="https://images.pexels.com/photos/708488/pexels-photo-708488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Aura Bites">
+        <h1>Aura Bites</h1>
+        <nav>
+            <ol>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order Form</a></li>
+            </ol>
+        </nav>
+    </header>
+    <hr>
+    <section id="menu">
+        <h2>Menu</h2>
+        <hr>
+        <article>
+            <h3>Pasta</h3>
+            <figure>
+                <img
+                src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Picture of our famous pasta"
+                width="300px" height="200px"
+                />
+                <figcaption>
+                    <em>Price: 9.00$</em>
+                </figcaption>
+            </figure>
+            <p>
+                Our Home made Pasta</br>
+                Delectable strands of pasta. Tossed in a savory sauce, a culinary contrast.
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h3>Sandwich</h3>
+            <figure>
+                <img
+                src="https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Picture of our savoury Sandwich"
+                width="300px" height="200px"
+                />
+                <figcaption>
+                    <em>Price: 6.50$</em>
+                </figcaption>
+            </figure>
+            <p>
+                Our Special Sandwich</br>
+                A delightful blend of fresh ingredients, stacked high for a flavor-packed bite.
+            </p>              
+        </article>
+        <hr>
+        <article>
+            <h3>Salad</h3>
+            <figure>
+                <img
+                src="https://images.pexels.com/photos/1013518/pexels-photo-1013518.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Picture of our delicious Salad"
+                width="300px" height="200px"
+                />
+                <figcaption>
+                    <em>Price: 5.00$</em>
+                </figcaption>
+            </figure>
+            <p>
+                Fresh Garden Salad</br>
+                Crisp greens, colorful vegetables, and a zesty dressing for a refreshing experience.
+              </p>
+        </article>
+    </section>
+    <hr>
+    <section id="order-form">
+        <form>
+            <h2>Place Your Order!</h2>
+            <h3>Pasta</h3></br>
+            <label for="ps">Number of items:</label> <input type="number" placeholder="Max 5" name="ps" min="0" max="5">
+            <label for="side"><h4>Sides</h4></label>
+            <input name="side" type="radio">Garlic Bread</br>
+            <input name="side" type="radio">Bread Sticks</br>
+            <label for="ad"><h4>Add on</h4></label>
+            <input name="ad" type="checkbox">Extra Cheese</br>
+            <hr>
+            <h3>Sandwich</h3></br>
+            <label for="ps">Number of items:</label> <input type="number" placeholder="Max 5" min="0" name="ps" max="5">
+            <label for="side"><h4>Sides</h4></label>
+            <input name="side" type="radio">Tomato Soup</br>
+            <input name="side" type="radio">Chicken soup</br>
+            <label for="ad"><h4>Add on</h4></label>
+            <input name="ad" type="checkbox">Extra Cheese</br>
+            <input name="ad" type="checkbox">Extra Meat</br>
+            <input name="ad" type="checkbox">Extra Sauce</br>
+            <hr>
+            <h3>Salad</h3></br>
+            <label for="ps">Number of items:</label> <input type="number" placeholder="Max 5" min="0" name="ps" max="5">
+            <label for="side"><h4>Sides</h4></label>
+            <input name="side" type="radio">Croutons</br>
+            <input name="side" type="radio">Chicken</br>
+            <label for="ad"><h4>Add on</h4></label>
+            <input name="ad" type="checkbox">Extra Cheese</br>
+            <input name="ad" type="checkbox">Extra Dressing</br>
+            <hr>
+            <label for="requests"><h4>Special Requests</h4></label>
+            <textarea name="requests"></textarea>
+            <hr>
+            <input type="submit" value="Go to Checkout">
+        </form>
+    </section>
+    <footer>
+        <p>Made with love by Mkh</p>
+    </footer>
+</body>
+</html>
