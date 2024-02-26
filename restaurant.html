@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Bites</title>
     <style>
-        *{
-            background-color: blanchedalmond;
+
+        body{
+            background-color: beige;
         }
-        footer{
-            color:darkblue
+
+        footer {
+            color: rgb(151, 151, 136);
         }
-        #order-form{
+
+        #button {
+            background-color: brown; 
+            color: beige; 
+            padding: 10px 20px; 
+            border: darkred; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            font-size: 14px; 
+}
+
+        #order-form {
             display: flex;
             justify-content: center;
-            align-content: center;
             align-items: center;
         }
-        #header-img{
-            width: 50px;
-            height: 30px;
+
+        img{
+            border-color: brown;
+            border-radius: 20px;
         }
+
+        #menu{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        #header-img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
         header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 5px;
-            }
-        nav ol li{
+            position: sticky;
+            top: 0; 
+            color: beige;
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 5px;
+            border-color: darkred;
+            border-radius: 30px;
+        }
+
+        #menu-heading{
+            padding-left: 20px;
+            transform: rotate(-90deg);
+            font-size: 30px;
+            text-shadow: 1px 1px 2px  darkred;
+        }
+
+        nav ol {
+            margin-right: 20px; 
+        }
+
+        nav ol li {
             list-style: none;
             display: inline-block;
+            margin-left: 10px;
         }
-        h1{
-            color:darkblue;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        p, label{
+            color: rgb(88, 18, 18);
         }
-        h2{
-            text-shadow: 1px 1px 1px darkblue;
-            display: flex;
-        }
-        textarea{
-            width:300px;
-            height:100px;
-            border-style: dotted;
-            border-color: darkblue;
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            border: 1px dotted darkblue;
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <img id="header-img" src="https://images.pexels.com/photos/708488/pexels-photo-708488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Aura Bites">
+        <img id="header-img" src="https://img.icons8.com/?size=24&id=119925&format=png" alt="Aura Bites">
         <h1>Aura Bites</h1>
         <nav>
             <ol>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#order-form">Order Form</a></li>
+                <li><a style="color: beige" href="#menu">Menu</a></li>
+                <li><a style="color: beige" href="#order-form">Order Form</a></li>
             </ol>
         </nav>
     </header>
-    <hr>
     <section id="menu">
-        <h2>Menu</h2>
+        <h2 id="menu-heading">Menu</h2>
         <hr>
         <article>
             <h3>Pasta</h3>
             <figure>
-                <img
-                src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Picture of our famous pasta"
-                width="300px" height="200px"
-                />
+                <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Picture of our famous pasta" width="300px" height="200px" />
                 <figcaption>
-                    <em>Price: 9.00$</em>
+                    <em>Price: $9.00</em>
                 </figcaption>
             </figure>
             <p>
-                Our Home made Pasta</br>
+                Our homemade Pasta<br>
                 Delectable strands of pasta. Tossed in a savory sauce, a culinary contrast.
             </p>
         </article>
@@ -83,78 +122,99 @@
         <article>
             <h3>Sandwich</h3>
             <figure>
-                <img
-                src="https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Picture of our savoury Sandwich"
-                width="300px" height="200px"
-                />
+                <img src="https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Picture of our savory Sandwich" width="300px" height="200px" />
                 <figcaption>
-                    <em>Price: 6.50$</em>
+                    <em>Price: $6.50</em>
                 </figcaption>
             </figure>
             <p>
-                Our Special Sandwich</br>
+                Our Special Sandwich<br>
                 A delightful blend of fresh ingredients, stacked high for a flavor-packed bite.
-            </p>              
+            </p>
         </article>
         <hr>
         <article>
             <h3>Salad</h3>
             <figure>
-                <img
-                src="https://images.pexels.com/photos/1013518/pexels-photo-1013518.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Picture of our delicious Salad"
-                width="300px" height="200px"
-                />
+                <img src="https://images.pexels.com/photos/1013518/pexels-photo-1013518.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Picture of our delicious Salad" width="300px" height="200px" />
                 <figcaption>
-                    <em>Price: 5.00$</em>
+                    <em>Price: $5.00</em>
                 </figcaption>
             </figure>
             <p>
-                Fresh Garden Salad</br>
+                Fresh Garden Salad<br>
                 Crisp greens, colorful vegetables, and a zesty dressing for a refreshing experience.
-              </p>
+            </p>
         </article>
     </section>
     <hr>
     <section id="order-form">
         <form>
-            <h2>Place Your Order!</h2>
-            <h3>Pasta</h3></br>
-            <label for="ps">Number of items:</label> <input type="number" placeholder="Max 5" name="ps" min="0" max="5">
-            <label for="side"><h4>Sides</h4></label>
-            <input name="side" type="radio">Garlic Bread</br>
-            <input name="side" type="radio">Bread Sticks</br>
-            <label for="ad"><h4>Add on</h4></label>
-            <input name="ad" type="checkbox">Extra Cheese</br>
+            <h2 style="text-shadow: 1px 1px 2px  darkred;">Place Your Order!</h2>
+    
+            <section>
+                <h3>Pasta</h3>
+                <label for="ps-pasta">Number of items:</label>
+                <input type="number" id="ps-pasta" placeholder="Max 5" name="ps-pasta" min="0" max="5">
+                <h4>Sides</h4>
+                <input id="side-pasta-garlic" name="side-pasta" type="radio">
+                <label for="side-pasta-garlic">Garlic Bread</label>
+                <input id="side-pasta-sticks" name="side-pasta" type="radio">
+                <label for="side-pasta-sticks">Bread Sticks</label>
+                <input id="side-pasta-none" name="side-pasta" type="radio">
+                <label for="side-pasta-none">None</label>
+                <h4>Add ons</h4>
+                <input id="ad-pasta-cheese" name="ad-pasta" type="checkbox">
+                <label for="ad-pasta-cheese">Extra Cheese</label>
+            </section>
             <hr>
-            <h3>Sandwich</h3></br>
-            <label for="ps">Number of items:</label> <input type="number" placeholder="Max 5" min="0" name="ps" max="5">
-            <label for="side"><h4>Sides</h4></label>
-            <input name="side" type="radio">Tomato Soup</br>
-            <input name="side" type="radio">Chicken soup</br>
-            <label for="ad"><h4>Add on</h4></label>
-            <input name="ad" type="checkbox">Extra Cheese</br>
-            <input name="ad" type="checkbox">Extra Meat</br>
-            <input name="ad" type="checkbox">Extra Sauce</br>
+            <section>
+                <h3>Sandwich</h3>
+                <label for="ps-sandwich">Number of items:</label>
+                <input type="number" id="ps-sandwich" placeholder="Max 5" min="0" name="ps-sandwich" max="5">
+                <h4>Sides</h4>
+                <input id="side-sandwich-tomato" name="side-sandwich" type="radio">
+                <label for="side-sandwich-tomato">Tomato Soup</label>
+                <input id="side-sandwich-chicken" name="side-sandwich" type="radio">
+                <label for="side-sandwich-chicken">Chicken Soup</label>
+                <input id="side-sandwich-none" name="side-sandwich" type="radio">
+                <label for="side-sandwich-none">None</label>
+                <h4>Add ons</h4>
+                <input id="ad-sandwich-cheese" name="ad-sandwich" type="checkbox">
+                <label for="ad-sandwich-cheese">Extra Cheese</label>
+                <input id="ad-sandwich-meat" name="ad-sandwich" type="checkbox">
+                <label for="ad-sandwich-meat">Extra Meat</label>
+                <input id="ad-sandwich-sauce" name="ad-sandwich" type="checkbox">
+                <label for="ad-sandwich-sauce">Extra Sauce</label>
+            </section>
             <hr>
-            <h3>Salad</h3></br>
-            <label for="ps">Number of items:</label> <input type="number" placeholder="Max 5" min="0" name="ps" max="5">
-            <label for="side"><h4>Sides</h4></label>
-            <input name="side" type="radio">Croutons</br>
-            <input name="side" type="radio">Chicken</br>
-            <label for="ad"><h4>Add on</h4></label>
-            <input name="ad" type="checkbox">Extra Cheese</br>
-            <input name="ad" type="checkbox">Extra Dressing</br>
+            <section>
+                <h3>Salad</h3>
+                <label for="ps-salad">Number of items:</label>
+                <input type="number" id="ps-salad" placeholder="Max 5" min="0" name="ps-salad" max="5">
+                <h4>Sides</h4>
+                <input id="side-salad-croutons" name="side-salad" type="radio">
+                <label for="side-salad-croutons">Croutons</label>
+                <input id="side-salad-chicken" name="side-salad" type="radio">
+                <label for="side-salad-chicken">Chicken</label>
+                <input id="side-salad-none" name="side-salad" type="radio">
+                <label for="side-salad-none">None</label>
+                <h4>Add ons</h4>
+                <input id="ad-salad-cheese" name="ad-salad" type="checkbox">
+                <label for="ad-salad-cheese">Extra Cheese</label>
+                <input id="ad-salad-dressing" name="ad-salad" type="checkbox">
+                <label for="ad-salad-dressing">Extra Dressing</label>
+            </section>
             <hr>
-            <label for="requests"><h4>Special Requests</h4></label>
-            <textarea name="requests"></textarea>
+            <label for="requests"><h4 style="color: black;">Special Requests</h4></label>
+            <textarea id="requests" name="requests"></textarea>
             <hr>
-            <input type="submit" value="Go to Checkout">
+            <input type="submit" id="button" value="Go to Checkout">
         </form>
-    </section>
+    </section>    
     <footer>
         <p>Made with love by Mkh</p>
     </footer>
 </body>
+
 </html>
