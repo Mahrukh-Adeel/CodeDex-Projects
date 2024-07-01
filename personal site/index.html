@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Site</title>
+  <link rel="icon" type="image/x-icon" href="./images/laptop.png">
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+IT+Moderna&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="icon">
+        <img src="./images/laptop.png" alt="laptop icon">
+      </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="in">
+        <p>Hi, I'm <span id="name">Mahrukh</span>, a Front-End Developer. I enjoy building websites and web 
+          applications. I'm proficient in HTML, CSS, and JavaScript. I'm currently learning React and Python. 
+          I'm looking for opportunities to work on more fun projects :D.</p>
+          <img src="./images/person.png" alt="Img">
+      </div>
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="in">
+        <div class="project">
+          <a href="https://github.com/Mahrukh-Adeel/CodeDex-Projects/tree/main/weather-app"><h2>Weather App</h2></a>
+          <a href="https://github.com/Mahrukh-Adeel/CodeDex-Projects/tree/main/weather-app"><img src="./images/weather.png" alt="Weather App Web"></a>
+          <p>A user-friendly app where users can search for current weather by city. It fetches and displays temperature, description, and weather icons using the OpenWeather API.  The design is clean and minimalistic, focusing on essential weather information.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/Mahrukh-Adeel/CodeDex-Projects/blob/main/restaurant.html"><h2>Restaurant Order Form</h2></a>
+          <a href="https://github.com/Mahrukh-Adeel/CodeDex-Projects/blob/main/restaurant.html"><img src="./images/restaurant.png" alt=""></a>
+          <p>An appealing platform presenting a menu of Pasta, Sandwiches, and Salads with vivid images and detailed descriptions. Users can place orders effortlessly using a streamlined form for customizing items and adding preferences.</p>
+        </div>
+        <div class="project">
+          <a href="https://mahrukh-adeel.github.io/qr-code-component/"><h2>QR Code Component</h2></a>
+          <a href="https://mahrukh-adeel.github.io/qr-code-component/"><img src="./images/QR.png" alt="qr code Component img"></a>
+          <p>A versatile and efficient QR code component that generates and displays QR codes for seamless access to digital content. It offers quick scanning capabilities for effortless interaction with links, texts, or data encoded within the QR code.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact me!</h1>
+      <div class="in">
+        <form>
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="fname" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Made with love by Mkh</p>
+  </footer>
+</body>
+</html>

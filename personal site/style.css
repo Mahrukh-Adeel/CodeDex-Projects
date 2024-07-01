@@ -1,0 +1,203 @@
+body{
+    margin:0px;
+    padding:0;
+    font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+p{
+    font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width:300px;
+    height: 150px;
+    border-radius: 20px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+#icon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 0%;
+}
+body{
+    background-color: #e5f2f5;
+}
+nav li{
+    position: relative;
+    display: inline;
+    padding: 10px;
+}
+nav li a:hover{
+    color: #0b77a5;
+}
+nav li a{
+    color:white
+}
+nav{
+    top:0;
+    padding:10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+h1 {
+    padding: 10px 0 10px 10px; 
+    box-shadow: 2px 2px 5px #333; 
+  }
+  
+#about .in{
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+#about img{
+    width: 300px;
+    height: 300px;
+}
+#about p{
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: flex-end; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #333;
+    background-color: White;
+    font-weight: 400;
+  }
+  #projects .in{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #333;
+    transition:  transform 0.5s ease;
+  }
+  .project:hover{
+    transform: scale(1.1);
+  }
+  .project h2 {
+    border-top: 2px solid #2b87af;
+    border-bottom: 2px solid #2b87af;
+}
+  p{
+    text-align: center;
+  }
+  #contact .in{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+  }
+  h1{
+    background-color: #2b87af;
+    color: #eef7f8;
+  }
+  .project img{
+    border: 2px solid #ccc;
+  }
+  label{
+    padding: 10px 10px 10px 0;
+  }
+
+  button{
+    margin-top: 10px;
+    background-color:#0b77a5;
+    color: white;
+    border: none;
+    font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  border-radius:3px;
+  }
+  button:hover{
+    background-color: #163d4e;
+    cursor:pointer;
+  }
+  input{
+    width: 300px;
+  }
+  #about p{
+    font-size: 1.6em;
+  }
+  #name{
+      font-weight: 400;
+      background: linear-gradient(50deg, #2b87af, #0b77a5, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  }
+  #fname,#email, button{
+    font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+    height:30px;
+  }
+  #message{
+    font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-size: small;
+    height:60px;
+  }
+
+@media screen and (max-width: 600px) {
+    nav li{
+        display:flexbox;
+        padding: 10px;
+    }
+    #about .in{
+        flex-direction: column;
+    }
+    #projects .in{
+        flex-direction: column;
+    }
+    #contact .in{
+        flex-direction: column;
+    }
+    form {
+        max-width: 100%;
+    }
+    .project{
+        max-width: 100%;
+    }
+}
